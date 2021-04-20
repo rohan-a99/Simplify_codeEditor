@@ -226,6 +226,12 @@ export namespace CommonCommands {
         label: 'Open View...'
     };
 
+    export const NEW: Command = {
+        id: 'core.new',
+        category: FILE_CATEGORY,
+        label: 'New File'
+    };
+
     export const SAVE: Command = {
         id: 'core.save',
         category: FILE_CATEGORY,
