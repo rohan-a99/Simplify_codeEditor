@@ -82,7 +82,7 @@ export namespace CommonMenus {
     export const SETTINGS__THEME = [...SETTINGS_MENU, '2_settings_theme'];
 
     // last menu item
-    export const HELP = [...MAIN_MENU_BAR, '9_help'];
+    // export const HELP = [...MAIN_MENU_BAR, '9_help'];
 
 }
 
@@ -453,7 +453,7 @@ export class CommonFrontendContribution implements FrontendApplicationContributi
         registry.registerSubmenu(CommonMenus.FILE, 'File');
         registry.registerSubmenu(CommonMenus.EDIT, 'Edit');
         registry.registerSubmenu(CommonMenus.VIEW, 'View');
-        registry.registerSubmenu(CommonMenus.HELP, 'Help');
+        // registry.registerSubmenu(CommonMenus.HELP, 'Help');
 
         registry.registerMenuAction(CommonMenus.FILE_SAVE, {
             commandId: CommonCommands.SAVE.id
@@ -542,11 +542,11 @@ export class CommonFrontendContribution implements FrontendApplicationContributi
             label: 'Toggle Maximized',
             order: '5'
         });
-        registry.registerMenuAction(CommonMenus.HELP, {
-            commandId: CommonCommands.ABOUT_COMMAND.id,
-            label: 'About',
-            order: '9'
-        });
+        // registry.registerMenuAction(CommonMenus.HELP, {
+        //     commandId: CommonCommands.ABOUT_COMMAND.id,
+        //     label: 'About',
+        //     order: '9'
+        // });
 
         registry.registerMenuAction(CommonMenus.VIEW_PRIMARY, {
             commandId: CommonCommands.OPEN_VIEW.id

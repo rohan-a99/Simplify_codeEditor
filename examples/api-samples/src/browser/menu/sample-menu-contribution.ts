@@ -14,7 +14,7 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-import { Command, CommandContribution, CommandRegistry, MAIN_MENU_BAR, MenuContribution, MenuModelRegistry, MenuNode, SubMenuOptions } from '@theia/core/lib/common';
+import { Command, CommandContribution, CommandRegistry, MenuContribution, MenuModelRegistry, MenuNode, SubMenuOptions } from '@theia/core/lib/common';
 import { injectable, interfaces } from '@theia/core/shared/inversify';
 
 const SampleCommand: Command = {
@@ -46,30 +46,30 @@ export class SampleCommandContribution implements CommandContribution {
 @injectable()
 export class SampleMenuContribution implements MenuContribution {
     registerMenus(menus: MenuModelRegistry): void {
-        const subMenuPath = [...MAIN_MENU_BAR, 'sample-menu'];
-        menus.registerSubmenu(subMenuPath, 'Sample Menu', {
-            order: '2' // that should put the menu right next to the File menu
-        });
-        menus.registerMenuAction(subMenuPath, {
-            commandId: SampleCommand.id,
-            order: '0'
-        });
-        menus.registerMenuAction(subMenuPath, {
-            commandId: SampleCommand2.id,
-            order: '2'
-        });
-        const subSubMenuPath = [...subMenuPath, 'sample-sub-menu'];
-        menus.registerSubmenu(subSubMenuPath, 'Sample sub menu', { order: '2' });
-        menus.registerMenuAction(subSubMenuPath, {
-            commandId: SampleCommand.id,
-            order: '1'
-        });
-        menus.registerMenuAction(subSubMenuPath, {
-            commandId: SampleCommand2.id,
-            order: '3'
-        });
-        const placeholder = new PlaceholderMenuNode([...subSubMenuPath, 'placeholder'].join('-'), 'Placeholder', { order: '0' });
-        menus.registerMenuNode(subSubMenuPath, placeholder);
+        //     const subMenuPath = [...MAIN_MENU_BAR, 'sample-menu'];
+        //     menus.registerSubmenu(subMenuPath, 'Sample Menu', {
+        //         order: '2' // that should put the menu right next to the File menu
+        //     });
+        //     menus.registerMenuAction(subMenuPath, {
+        //         commandId: SampleCommand.id,
+        //         order: '0'
+        //     });
+        //     menus.registerMenuAction(subMenuPath, {
+        //         commandId: SampleCommand2.id,
+        //         order: '2'
+        //     });
+        //     const subSubMenuPath = [...subMenuPath, 'sample-sub-menu'];
+        //     menus.registerSubmenu(subSubMenuPath, 'Sample sub menu', { order: '2' });
+        //     menus.registerMenuAction(subSubMenuPath, {
+        //         commandId: SampleCommand.id,
+        //         order: '1'
+        //     });
+        //     menus.registerMenuAction(subSubMenuPath, {
+        //         commandId: SampleCommand2.id,
+        //         order: '3'
+        //     });
+        //     const placeholder = new PlaceholderMenuNode([...subSubMenuPath, 'placeholder'].join('-'), 'Placeholder', { order: '0' });
+        //     menus.registerMenuNode(subSubMenuPath, placeholder);
     }
 
 }

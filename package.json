@@ -97,6 +97,7 @@
     "vscode-editorconfig": "https://open-vsx.org/api/EditorConfig/EditorConfig/0.14.4/file/EditorConfig.EditorConfig-0.14.4.vsix",
     "vscode-eslint": "https://open-vsx.org/api/dbaeumer/vscode-eslint/2.1.1/file/dbaeumer.vscode-eslint-2.1.1.vsix",
     "vscode-references-view": "https://open-vsx.org/api/ms-vscode/references-view/0.0.47/file/ms-vscode.references-view-0.0.47.vsix",
-    "vscode-java-language-support": "https://open-vsx.org/api/redhat/java/0.76.0/file/redhat.java-0.76.0.vsix"
+    "vscode-java-language-support": "https://open-vsx.org/api/redhat/java/0.76.0/file/redhat.java-0.76.0.vsix",
+    "vscode-java-debug": "https://open-vsx.org/api/vscjava/vscode-java-debug/0.37.0/file/vscjava.vscode-java-debug-0.37.0.vsix"
   }
 }

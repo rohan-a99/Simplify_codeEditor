@@ -96,7 +96,8 @@ blockquote {
   z-index: 50000;
   background: var(--theia-editor-background);
   background-image: var(--theia-preloader);
-  background-size: 60px 60px;
+ 
+  background-size: 200px 120px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
